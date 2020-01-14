@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>$:/state/tab-1749438307</li>
 
+<li>$:/state/tab-2065006209</li>
+
 <li>$:/state/tab/sidebar--595412856</li>
 
 <li>$:/StoryList</li>
@@ -9528,13 +9530,16 @@ very-muted-foreground: #2d3038
 <div created="20200114172839054" modified="20200114172849422" title="$:/SiteTitle">
 <pre>Junior EE Lab</pre>
 </div>
-<div created="20200114172825724" modified="20200114172835088" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200114172825724" modified="20200114175416214" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
+</div>
+<div created="20200114175417837" modified="20200114175417837" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20200114172918836" modified="20200114173420030" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20200114173922243" list="[[Course Goals]] [[Whiteboard Notes]]" modified="20200114173922243" title="$:/StoryList">
+<div list="[[Course Goals]] [[Whiteboard Notes]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9704,8 +9709,8 @@ very-muted-foreground: #2d3038
     }
 }</pre>
 </div>
-<div created="20200114173910115" modified="20200114175309840" tags="" title="Course Goals">
-<pre>Junior EE Lab provides a foundation for working on any kind of electronics project. A good foundation helps avoid getting stuck on *the wrong problems* (problems that fall outside the core goals of the project).
+<div created="20200114173910115" modified="20200114182206996" tags="" title="Course Goals">
+<pre>Junior EE Lab provides a foundation for working on future electronics projects. A good foundation helps avoid getting stuck on the //wrong problems// (problems that fall outside the core goals of the project).
 
 Foundation:
 
@@ -9714,7 +9719,7 @@ Foundation:
 ** when to consider parasitics
 ** how to buffer high-impedance outputs
 ** SPICE GIGO
-* Internalizing a TDD work flow for:
+* Internalize a TDD work flow for:
 ** rapid iteration
 ** documenting
 ** hierarchical designs (i.e., block diagram, modular, divide-and-conquer, re-use)
@@ -9722,19 +9727,29 @@ Foundation:
 * Build up a bag of tricks for:
 ** Oscilloscope measurements
 ** Power supplies (going beyond the lab bench supplies!)
+** Connectors and wiring (going beyond 22AWG-solid-wire jumpers and banana cables!)
 * Familiarity with datasheets:
 ** where to find them
 ** how to read them
 ** sane work flow for documenting the golden nuggets
-* Rapid prototyping solutions for digital communication
-** USB
-** Bluetooth
+
+Junior EE Lab is also an opportunity to pick-up additional skills. This does not fit in a single course, but any of this is available to students with the motivation to learn:
+
 * PCB design
-** Design in EAGLE
+** Design in Autodesk EAGLE
+** 3D models in Autodesk Fusion360
 ** sane work flow for managing BOM
 ** hand-soldering
 ** ordering turnkey boards when SMT is required
-* Shopping for parts (going beyond the lab parts-bins)</pre>
+* Shopping for parts (going beyond the lab parts-bins)
+* Rapid prototyping solutions for communicating with a computer for instrumentation/control/display
+** USB
+** Bluetooth
+* Basic 8-bit embedded setup using Atmel/Microchip for talking to sensors over SPI or I2C:
+** breadboard with 6-pin ISP header and Flash programmer
+** computer with AVR toolchain and GNU tools: `make`, `gcc`, `gdb`, `git`, and `Vim`
+** Makefile for project build, running tests, and downloading flash
+** no vendor-specific or OS-dependent IDEs: //do it all// from the command line (or `Vim`)</pre>
 </div>
 <div created="20200114173346117" modified="20200114173417505" title="Whiteboard Notes">
 <pre>[img[whiteboard-photo/week-1.jpg]]
