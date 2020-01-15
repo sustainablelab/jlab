@@ -163,6 +163,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/Excise/--1278902520/tagnew</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
@@ -173,11 +175,23 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
+<li>$:/temp/search</li>
+
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
 <li>Course Goals</li>
+
+<li>Week-1</li>
+
+<li>Week-2</li>
+
+<li>Week-3</li>
+
+<li>Week-4</li>
+
+<li>Week-5</li>
 
 <li>Whiteboard Notes</li>
 
@@ -9530,6 +9544,9 @@ very-muted-foreground: #2d3038
 <div created="20200114172839054" modified="20200114172849422" title="$:/SiteTitle">
 <pre>Junior EE Lab</pre>
 </div>
+<div created="20200115143006468" modified="20200115143006468" title="$:/state/Excise/--1278902520/tagnew">
+<pre>yes</pre>
+</div>
 <div created="20200114172825724" modified="20200114175416214" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
@@ -9539,7 +9556,7 @@ very-muted-foreground: #2d3038
 <div created="20200114172918836" modified="20200114173420030" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div list="[[Course Goals]] [[Whiteboard Notes]]" title="$:/StoryList">
+<div created="20200115143055361" list="[[Course Goals]] [[Whiteboard Notes]]" modified="20200115145045278" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9599,6 +9616,9 @@ very-muted-foreground: #2d3038
         }
     }
 }</pre>
+</div>
+<div created="20200115143050032" modified="20200115143050868" title="$:/temp/search">
+<pre>Week-4</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.21">
 <pre>{
@@ -9764,11 +9784,55 @@ Junior EE Lab is also an opportunity to pick-up additional skills. This does not
 ** Makefile for project build, running tests, and downloading flash
 ** no vendor-specific or OS-dependent IDEs: //do it all// from the command line (or `Vim`)</pre>
 </div>
-<div created="20200114173346117" modified="20200114173417505" title="Whiteboard Notes">
-<pre>[img[whiteboard-photo/week-1.jpg]]
+<div created="20200115143327628" modified="20200115143433596" tags="[[Whiteboard Notes]]" title="Week-1">
+<pre>! [[Week-1]]: passive ''voltage dividers''
+[img[whiteboard-photo/week-1.jpg]]
+</pre>
+</div>
+<div created="20200115143503608" modified="20200115143841378" tags="[[Whiteboard Notes]]" title="Week-2">
+<pre>! [[Week-2]]: hands-on ''resistors, capacitors, and diodes'' and a ''test-driven work flow''
 [img[whiteboard-photo/week-2.jpg]]
+</pre>
+</div>
+<div created="20200115143520156" modified="20200115145014704" tags="[[Whiteboard Notes]]" title="Week-3">
+<pre>! [[Week-3]]: hands-on ''op-amps'' for making impedance buffers
 [img[whiteboard-photo/week-3.jpg]]
+
+An op-amp impedance buffer is straight-forward. The real goal is that students can derive the negative feedback behavior on their own. Two reasons this is valuable:
+
+1. This is a more solid foundation than memorizing the two //Golden Rules// from H&amp;H.
+
+2. It's a model, so it's easy to implement it in SPICE for ''ideal'' op-amp behavior:
+
+* Encourages using ''SPICE to sketch ideas for a system'' rather than randomly walking some design parameters.
+* Builds confidence in experimenting with design ideas by ''translating concepts from earlier circuits classes into simulations''.</pre>
+</div>
+<div created="20200115143011000" modified="20200115143246630" tags="[[Whiteboard Notes]]" title="Week-4">
+<pre>! [[Week-4]]: ''discrete implementation'' of 555
+* goals: apply op-amp knowledge, build up a system by designing in blocks
+* review op-amp circuit blocks: negative feedback circuits, comparators, and buffers
+* review 555 black-box operation
+* challenge: build discrete implementation of 555 based on the block diagram shown in the datasheet
+** motivates need for the Schmitt trigger
+** applies impedance buffering knowledge from last week
+** introduces block-based design
+*** TDD to lock down working parts of the design
+*** how to combine circuit blocks into a system (both physically and in SPICE)
+*** rapid switching between modeling (white board or SPICE) and oscilloscope measurements
+**** SPICE modeling only uses device models students write, no vendor models!
+</pre>
+</div>
+<div created="20200115143550283" modified="20200115145316189" tags="[[Whiteboard Notes]]" title="Week-5">
+<pre>! [[Week-5]]: ''regulated supplies'' and driving ''high-current loads''
+//Whiteboard should read ''week-5''//
 [img[whiteboard-photo/week-4.jpg]]</pre>
+</div>
+<div created="20200114173346117" modified="20200115143553578" title="Whiteboard Notes">
+<pre>{{Week-1}}
+{{Week-2}}
+{{Week-3}}
+{{Week-4}}
+{{Week-5}}</pre>
 </div>
 
 </div>
