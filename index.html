@@ -9556,7 +9556,7 @@ very-muted-foreground: #2d3038
 <div created="20200114172918836" modified="20200114173420030" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20200115143055361" list="[[Course Goals]] [[Whiteboard Notes]]" modified="20200115145045278" title="$:/StoryList">
+<div list="[[Course Goals]] [[Whiteboard Notes]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9729,7 +9729,7 @@ very-muted-foreground: #2d3038
     }
 }</pre>
 </div>
-<div created="20200114173910115" modified="20200115135741992" tags="" title="Course Goals">
+<div created="20200114173910115" modified="20200117175826377" tags="" title="Course Goals">
 <pre>Junior EE Lab provides a foundation for working on future electronics projects. A good foundation helps avoid getting stuck on the //wrong problems// (problems that fall outside the core goals of the project).
 
 Foundation:
@@ -9766,23 +9766,28 @@ Foundation:
 ** how to read them
 ** sane work flow for documenting the golden nuggets
 
-Junior EE Lab is also an opportunity to pick-up additional skills. This does not fit in a single course, but any of this is available to students with the motivation to learn:
+Junior EE Lab is also an opportunity to start embedded systems:
 
-* PCB design
-** Design in Autodesk EAGLE
-** 3D models in Autodesk Fusion360
-** sane work flow for managing BOM
-** hand-soldering
-** ordering turnkey boards when SMT is required
-* Shopping for parts (going beyond the lab parts-bins)
-* Rapid prototyping solutions for communicating with a computer for instrumentation/control/display
-** USB
-** Bluetooth
 * Basic 8-bit embedded setup using Atmel/Microchip for talking to sensors over SPI or I2C:
 ** breadboard with 6-pin ISP header and Flash programmer
 ** computer with AVR toolchain and GNU tools: `make`, `gcc`, `gdb`, `git`, and `Vim`
 ** Makefile for project build, running tests, and downloading flash
-** no vendor-specific or OS-dependent IDEs: //do it all// from the command line (or `Vim`)</pre>
+** no vendor-specific or OS-dependent IDEs: //do it all// from the command line (or `Vim`)
+* Rapid prototyping solutions for communicating with a computer for instrumentation/control/display
+** USB
+** Bluetooth
+
+The above embedded toolset enables integrating sensors into a project and setting up measurements. Arduino and LabVIEW are valuable as educational tools, but a Cooper Union education should then go a level beyond. Arduino is ducktape: great for sketching ideas, but meant for throw-away work. Abandon Arduino when the project focus shifts to performance and mechanical design. National Instruments LabVIEW and their associated hardware solutions are just too expensive. And my experience is that customers are looking for interfaces/APIs/SDKs in Python and C++, not LabVIEW. This is beyond cost. LabVIEW adds friction to software distribution.
+
+Junior EE Lab is also an opportunity to pick-up skills specific to professional electronics design, for students with that interest:
+
+* PCB design
+** Design in Autodesk EAGLE
+** BOM management
+** 3D models in Autodesk Fusion360
+** hand-soldering and manual reflow for large SMT
+** ordering turnkey boards when small/dense SMT is required
+* Shopping for parts (going beyond the lab parts-bins)</pre>
 </div>
 <div created="20200115143327628" modified="20200115143433596" tags="[[Whiteboard Notes]]" title="Week-1">
 <pre>! [[Week-1]]: passive ''voltage dividers''
