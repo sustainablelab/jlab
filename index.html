@@ -9729,28 +9729,34 @@ very-muted-foreground: #2d3038
     }
 }</pre>
 </div>
-<div created="20200114173910115" modified="20200117175826377" tags="" title="Course Goals">
-<pre>Junior EE Lab provides a foundation for working on future electronics projects. A good foundation helps avoid getting stuck on the //wrong problems// (problems that fall outside the core goals of the project).
+<div created="20200114173910115" modified="20200125185943372" tags="" title="Course Goals">
+<pre>Junior EE Lab provides practical tools for electronics prototyping to help maintain focus on core IP.
 
-Foundation:
+Practical tools:
 
-* Intuition for device behavior
-** mental models:
-*** idealized voltage and current sources
-*** passives: resistors, capacitors, inductors, diodes
-*** actives: BJTs, FETs, op-amps
-*** noise
-** Intuition for when a mental model is useful in predicting circuit behavior
+* Intuition for device behavior using simple mental models:
+** idealized voltage and current sources
+** passives: resistors, capacitors, inductors, diodes
+** actives: BJTs, FETs, op-amps
+** noise
+* Intuition for predicting circuit behavior
+** when to apply a simple mental model
 *** how close is the approximation
-*** making more precise predictions via calculation and simulation
-*** switching between DC analysis and small-signal analysis
-* Bag of common circuit blocks with all of the above devices
-** Typical applications for devices
-** Device limitations to be wary of
-** Device package options for rapid prototyping in the lab vs design for PCB fabrication
-* Wary of pitfalls:
+** how to make more precise predictions by calculation and simulation
+** switching between DC analysis and small-signal analysis
+* Idealized component models as shorthand in block diagrams:
+** open-collector outputs
+** series-pass transistors
+** charge integrator op-amp configuration
+* Vocabulary of common circuit blocks:
+** Typical applications for each device
+** Device package options:
+*** rapid prototyping in the lab
+*** design for PCB fabrication
+* Experience with pitfalls:
 ** when to consider parasitics
 ** how to buffer high-impedance outputs
+** device limitations
 ** SPICE GIGO
 * Internalize a TDD work flow for:
 ** rapid iteration
@@ -9766,7 +9772,7 @@ Foundation:
 ** how to read them
 ** sane work flow for documenting the golden nuggets
 
-Junior EE Lab is also an opportunity to start embedded systems:
+Beyond the essential practical tools, Junior EE Lab is a good time to start embedded systems:
 
 * Basic 8-bit embedded setup using Atmel/Microchip for talking to sensors over SPI or I2C:
 ** breadboard with 6-pin ISP header and Flash programmer
@@ -9777,17 +9783,26 @@ Junior EE Lab is also an opportunity to start embedded systems:
 ** USB
 ** Bluetooth
 
-The above embedded toolset enables integrating sensors into a project and setting up measurements. Arduino and LabVIEW are valuable as educational tools, but a Cooper Union education should then go a level beyond. Arduino is ducktape: great for sketching ideas, but meant for throw-away work. Abandon Arduino when the project focus shifts to performance and mechanical design. National Instruments LabVIEW and their associated hardware solutions are just too expensive. And my experience is that customers are looking for interfaces/APIs/SDKs in Python and C++, not LabVIEW. This is beyond cost. LabVIEW adds friction to software distribution.
+The intent is an embedded toolkit for integrating sensors and measurement instrumentation. This is often down using an Arduino, LabVIEW, or MATLAB, which are all are valuable as //educational// tools. But a //Cooper Union education// should then go a level beyond.
 
-Junior EE Lab is also an opportunity to pick-up skills specific to professional electronics design, for students with that interest:
+The Arduino is ducktape: great for sketching ideas, but meant for throw-away work. Abandon Arduino when the project focus shifts to performance and mechanical design.
+
+National Instruments LabVIEW and their associated hardware solutions are expensive and add friction for distributing software or sharing instrumentation methods for anyone outside the National Instruments ecosystem. My anecdotal experience is that engineers are abandoning LabVIEW for Python-based instrumentation and expect API availability as a Python package.
+
+Junior EE Lab is also a chance to pick-up skills specific to professional electronics design:
 
 * PCB design
 ** Design in Autodesk EAGLE
+** shopping for parts (going beyond the lab parts-bins)
 ** BOM management
 ** 3D models in Autodesk Fusion360
-** hand-soldering and manual reflow for large SMT
-** ordering turnkey boards when small/dense SMT is required
-* Shopping for parts (going beyond the lab parts-bins)</pre>
+** integrating electrical and mechanical data
+* PCB assembly
+** hand-soldering
+** manual reflow for large SMT
+* PCB sourcing
+** turnkey boards when small/dense SMT is required
+</pre>
 </div>
 <div created="20200115143327628" modified="20200115143433596" tags="[[Whiteboard Notes]]" title="Week-1">
 <pre>! [[Week-1]]: passive ''voltage dividers''
